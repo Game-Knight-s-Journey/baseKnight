@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Coin
+  - Trap
+  - Enemy
+  - Key
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 534375313
+    locked: 0
+  - name: Ground
+    uniqueID: 1328464595
+    locked: 0
+  - name: ForeGround
+    uniqueID: 1512043155
+    locked: 0
+  - name: Enemy
+    uniqueID: 4114346851
+    locked: 0
+  - name: Layer
+    uniqueID: 496541859
+    locked: 0
+  - name: Item
+    uniqueID: 2967698477
+    locked: 0
+  - name: UI
+    uniqueID: 3809179311
+    locked: 0
+  m_RenderingLayers:
+  - Default
