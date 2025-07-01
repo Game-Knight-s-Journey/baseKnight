@@ -1,0 +1,49 @@
+# =============== #
+# Unity generated #
+# =============== #
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# ================================== #
+# Visual Studio / Rider generated    #
+# ================================== #
+/[Ee]xported[Oo]bj/
+.vs/
+.vscode/
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ============================ #
+# Rider generated              #
+# ============================ #
+.idea/
+
+# ====================================== #
+# Files that should be ignored by default #
+# ====================================== #
+*.apk
+*.unitypackage
+
+# ================================== #
+# Mac specific                       #
+# ================================== #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
