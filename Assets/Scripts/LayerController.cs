@@ -16,14 +16,14 @@ public class LayerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        gameManager=FindAnyObjectByType<GameManager>();
+        gameManager = FindAnyObjectByType<GameManager>();
         audioManager = FindAnyObjectByType<AudioManager>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -36,19 +36,32 @@ public class LayerController : MonoBehaviour
     }
     private void HandleMovement()
     {
-        float moveInput = Input.GetAxis("Horizontal");
-        rb.linearVelocity =  new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        float moveInput = 0f;
+
+        // Điều khiển bằng phím
+        moveInput += Input.GetAxisRaw("Horizontal");
+
+        // Điều khiển bằng cảm ứng
+        if (MobileInput.moveLeft) moveInput = -1f;
+        if (MobileInput.moveRight) moveInput = 1f;
+
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
         if (moveInput > 0) transform.localScale = new Vector3(1, 1, 1);
         else if (moveInput < 0) transform.localScale = new Vector3(-1, 1, 1);
     }
     private void HandleJump()
     {
-        if (Input.GetButtonDown("Jump")&&isGrounded)
+        // Kiểm tra đang đứng trên mặt đất
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+
+        // Nhảy bằng phím hoặc cảm ứng
+        if ((Input.GetButtonDown("Jump") || MobileInput.jump) && isGrounded)
         {
             audioManager.PlayJumpSound();
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x,jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            MobileInput.jump = false; // reset sau khi nhảy
         }
-        isGrounded=Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     private void UpdateAnimation()
@@ -56,6 +69,6 @@ public class LayerController : MonoBehaviour
         bool isRunning = Mathf.Abs(rb.linearVelocity.x) > 0.1f;
         bool isJumping = !isGrounded;
         animator.SetBool("IsRunning", isRunning);
-        animator.SetBool("IsJumping",  isJumping);
+        animator.SetBool("IsJumping", isJumping);
     }
 }
