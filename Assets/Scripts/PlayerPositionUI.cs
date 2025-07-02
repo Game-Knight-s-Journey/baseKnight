@@ -27,7 +27,20 @@ public class PlayerPositionUI : MonoBehaviour
 
         if (playerTransform != null)
         {
-            UpdatePositionText(playerTransform.position);
+            // --- PHẦN MỚI: TỰ ĐỘNG KHÔI PHỤC VỊ TRÍ KHI KHỞI ĐỘNG ---
+            if (PlayerPrefs.HasKey("PlayerPosX") && PlayerPrefs.HasKey("PlayerPosY"))
+            {
+                float x = PlayerPrefs.GetFloat("PlayerPosX");
+                float y = PlayerPrefs.GetFloat("PlayerPosY");
+                playerTransform.position = new Vector3(x, y, playerTransform.position.z);
+                Debug.Log($"Khôi phục vị trí player: X = {x}, Y = {y}");
+                UpdatePositionText(new Vector2(x, y));
+            }
+            else
+            {
+                // Nếu chưa có dữ liệu, thì hiển thị vị trí hiện tại
+                UpdatePositionText(playerTransform.position);
+            }
         }
         else
         {
@@ -52,7 +65,6 @@ public class PlayerPositionUI : MonoBehaviour
         Time.timeScale = 0f;
         Debug.Log("GAME ĐÃ TẠM DỪNG.");
 
-        // --- PHẦN MỚI ---
         // 3. Hiển thị panel tạm dừng
         if (pauseMenuPanel != null)
         {
