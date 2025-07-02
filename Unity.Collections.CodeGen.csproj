@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6977DEF2-D0D9-DF3B-5F09-C51F57575467}</ProjectGuid>
+    <ProjectGuid>{24F2554A-18CA-55D8-2D2A-D24FB321132D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Collections.CodeGen</AssemblyName>
@@ -1073,11 +1073,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Burst.csproj">
-      <Project>{0867EAFA-AF4D-472D-B2C4-F406C74B7CCD}</Project>
+      <Project>{980A6DCE-2832-10AD-6A1D-43F5E5A98052}</Project>
       <Name>Unity.Burst</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Collections.csproj">
-      <Project>{7324668F-C074-7E2E-D95A-23849F94A4A3}</Project>
+      <Project>{B2124F86-E757-26E8-2889-6674062DA21D}</Project>
       <Name>Unity.Collections</Name>
     </ProjectReference>
   </ItemGroup>

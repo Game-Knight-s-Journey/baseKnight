@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{ABC45150-E508-F1A5-066F-5EC285BC9C28}</ProjectGuid>
+    <ProjectGuid>{EBE77BE3-F574-D63E-CD29-FB4830DD569A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.SpriteShape.Runtime</AssemblyName>
@@ -878,19 +878,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.Common.Runtime.Player.csproj">
-      <Project>{B5038D02-B560-D6D4-2825-AF962A83747D}</Project>
+      <Project>{A8D681F3-9BE3-8D13-ACE3-5EAB8DA92A68}</Project>
       <Name>Unity.2D.Common.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Player.csproj">
-      <Project>{C4E74CFD-F372-D3A3-0C36-EBF33B3DD6A7}</Project>
+      <Project>{AA351F79-CA0C-D4A7-7E48-7BFF29DEE14F}</Project>
       <Name>Unity.Mathematics.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Burst.Player.csproj">
-      <Project>{2CDD5393-4344-2161-2E43-B2227DC6B43F}</Project>
+      <Project>{D049DD61-4820-B82B-FFA8-E3E433D79CCC}</Project>
       <Name>Unity.Burst.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{B7965EB4-D354-33F1-06F9-97553F7CF8A2}</Project>
+      <Project>{32D1851B-8AA7-2865-1A21-683518FC5D1A}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>
