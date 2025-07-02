@@ -10,7 +10,7 @@ public class ScoreEntry
 }
 
 [System.Serializable]
-public class HighScoreData // <--- Trình biên dịch đang tìm lớp này
+public class HighScoreData
 {
     public List<ScoreEntry> allScores = new List<ScoreEntry>();
 }

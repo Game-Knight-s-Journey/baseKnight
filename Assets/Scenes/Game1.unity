@@ -26755,7 +26755,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -599.4501, y: 455.16006}
+  m_AnchoredPosition: {x: -599.44995, y: 422.16}
   m_SizeDelta: {x: 174.6, y: 129.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422552089
@@ -26886,7 +26886,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -842, y: 453}
+  m_AnchoredPosition: {x: -842, y: 420}
   m_SizeDelta: {x: 310.5, y: 133.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &447723865
@@ -32615,8 +32615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b780c72c75c30434cbe5d12dfe1ad44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
-  jumpForce: 15
+  moveSpeed: 5
+  jumpForce: 16
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
