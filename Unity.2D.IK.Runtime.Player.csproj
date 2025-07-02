@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{489AFAA8-D250-6534-A2FC-216BB21E1D47}</ProjectGuid>
+    <ProjectGuid>{456FF060-4585-7686-926D-0325F2D4DFAA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.IK.Runtime</AssemblyName>
@@ -875,15 +875,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.Player.csproj">
-      <Project>{B1BD93EE-3EC2-1755-DEA4-9DCAE359CC4B}</Project>
+      <Project>{B41C8815-C9C7-27FE-07EF-05BC407823DD}</Project>
       <Name>Unity.InternalAPIEngineBridge.001.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Runtime.Player.csproj">
-      <Project>{95D423FD-821B-6E77-2B06-C0BA59183743}</Project>
+      <Project>{920CDD57-42E8-C66C-77E6-99D9512625A6}</Project>
       <Name>Unity.2D.Animation.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{B7965EB4-D354-33F1-06F9-97553F7CF8A2}</Project>
+      <Project>{32D1851B-8AA7-2865-1A21-683518FC5D1A}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>

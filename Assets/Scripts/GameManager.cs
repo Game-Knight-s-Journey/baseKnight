@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private GameObject gameOverUi;
     [SerializeField] private GameObject gameWinUi;
+    [SerializeField] private Transform player;
+    [SerializeField] private float fallYThreshold = -10f;
     //[SerializeField] private TextMeshProUGUI highScoresListText; // Dùng cho cả Win và Lose
     [SerializeField] private TextMeshProUGUI finalScoreText; // Hiển thị điểm khi kết thúc game
     [SerializeField] private TextMeshProUGUI highScoreText;  // Hiển thị điểm cao nhất
@@ -32,7 +34,7 @@ public class GameManager : MonoBehaviour
         score = 0;
         isGameOver = false;
         isGameWin = false;
-
+        player = GameObject.FindWithTag("Player").transform;
         UpdateScore();
         gameOverUi.SetActive(false);
         gameWinUi.SetActive(false);
@@ -51,7 +53,13 @@ public class GameManager : MonoBehaviour
         UpdateHighScoreUI();
     }
 
-
+    void Update()
+    {
+        if (!isGameOver && player.position.y < fallYThreshold)
+        {
+            GameOver();
+        }
+    }
     public void AddScore(int points)
     {
         if (!isGameOver && !isGameWin)
